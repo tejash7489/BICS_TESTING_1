@@ -37,7 +37,7 @@ exports.resetPasswordToken = async(req,res)=>{
         
 
         // const url = `http://localhost:5173/update-password/${token}`;
-        const url = `http://16aane/BICS/update-password/${token}`;
+        const url = `http://16aane/BISC/update-password/${token}`;
 
         await mailSender(
             email,
