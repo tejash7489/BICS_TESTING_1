@@ -5,7 +5,6 @@ const bcrypt = require("bcrypt")
 
 exports.signup = async(req,res) => {
     try {
-        console
         
         const {email,password} = req.body;
 
@@ -51,7 +50,6 @@ exports.signup = async(req,res) => {
 
 exports.login = async(req,res) => {
     try {
-        
         const {email , password} = req.body
 
         if(!email || !password){
