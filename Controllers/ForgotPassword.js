@@ -37,7 +37,7 @@ exports.resetPasswordToken = async(req,res)=>{
         
 
         // const url = `http://localhost:5173/update-password/${token}`;
-        const url = `http://16aane/BISC/update-password/${token}`;
+        const url = `http://bhartiics/update-password/${token}`;
 
         await mailSender(
             email,
@@ -98,7 +98,6 @@ exports.resetPassword = async(req,res)=>{
 
         await User.findOneAndUpdate(
             {token:token},
-            // {password:password},
             {password:encryptedPassword},
             {new:true}
         )
