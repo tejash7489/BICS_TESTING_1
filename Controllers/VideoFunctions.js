@@ -52,7 +52,7 @@ exports.VideoUpload = async (req,res) => {
       })
     }
 
-    const response = await uploadtocloudinary(file , "TejashVideo")
+    const response = await uploadtocloudinary(file , "Website_Videos")
 
 
     // DB entry
