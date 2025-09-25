@@ -42,7 +42,7 @@ exports.ImageUpload = async (req,res) => {
       })
     }
 
-    const response = await uploadtocloudinary(file , "Tejash")
+    const response = await uploadtocloudinary(file , "Website_Images")
 
     // DB entry
 
